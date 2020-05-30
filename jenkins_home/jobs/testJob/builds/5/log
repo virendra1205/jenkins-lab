@@ -1,0 +1,9 @@
+Started by user [8mha:////4BaEdTakpyz/BruazrM/4moYdSGN7GRjf5p+GO+W+Fy3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/testJob
+[testJob] $ /bin/sh -xe /tmp/jenkins6284203494946832494.sh
++ NAME=Virendra
++ date
++ echo Hello Virendra, Current date is Tue May 26 23:39:04 UTC 2020
+Hello Virendra, Current date is Tue May 26 23:39:04 UTC 2020
+Finished: SUCCESS

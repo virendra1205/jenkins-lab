@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-05-28 22:13:17.739 UTC</timestamp>
+  <md5sum>9147736e6e95d92acd3af7b4cb15c56c</md5sum>
+  <fileName>Credential id=SQLPASSWORD name=SQLPASSWORD for taking backup</fileName>
+  <usages>
+    <entry>
+      <string>mysql_db_backup_to_AWSS3_Bucket</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,7 @@
+---
+ - name: Build job with paramter throug jenkins
+   hosts: "{{ ENVRONMENT }}"
+   tasks:
+    - name: Task 1 - Print Message in "{{ ENVRONMENT }}" environment
+      debug:
+       msg: "Hello World"

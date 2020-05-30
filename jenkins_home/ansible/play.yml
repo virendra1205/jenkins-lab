@@ -1,0 +1,21 @@
+---
+- name: Sample ansible to test from jenkins running on docker
+  hosts: dev
+  tasks:
+   - name: Task 1 execution - print helloworld
+     shell:
+      cmd: echo "Hello Work"
+
+   - name: Task 2 execution - create tes file 
+     file:
+      path: /tmp/jenkins-docker-test.txt
+      owner: vyadav
+      group: vyadav
+      mode: 644
+      state: touch
+
+   - name: Adding content to file
+     copy: 
+      dest: /tmp/jenkins-docker-test.txt
+      content: "hello World"
+...

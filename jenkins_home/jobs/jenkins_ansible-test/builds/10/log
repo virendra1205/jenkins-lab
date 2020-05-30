@@ -1,0 +1,23 @@
+Started by user [8mha:////4BaEdTakpyz/BruazrM/4moYdSGN7GRjf5p+GO+W+Fy3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/jenkins_ansible-test
+[8mha:////4Atz0T/4CSPIrd+aV8IMPGOueN7av4Yg986suiqEhUWiAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlRRDA6NkM6NU3RRTE2Ndk+RkY11Ly2QjXXOzVHNDQ2PLtDQDAwD5lKmnrwAAAA==[0m[jenkins_ansible-test] $ ansible-playbook /var/jenkins_home/ansible/play.yml -i /var/jenkins_home/ansible/hosts -f 5
+
+PLAY [Sample ansible to test from jenkins running on docker] *******************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [test1][0m
+
+TASK [Task 1 execution - print helloworld] *************************************
+[0;33mchanged: [test1][0m
+
+TASK [Task 2 execution - create tes file] **************************************
+[0;33mchanged: [test1][0m
+
+TASK [Adding content to file] **************************************************
+[0;33mchanged: [test1][0m
+
+PLAY RECAP *********************************************************************
+[0;33mtest1[0m                      : [0;32mok=4   [0m [0;33mchanged=3   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS

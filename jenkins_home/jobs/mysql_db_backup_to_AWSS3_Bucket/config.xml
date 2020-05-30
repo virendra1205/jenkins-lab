@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>MYSQLHOST</name>
+          <description>The SQL Server host information </description>
+          <defaultValue>db</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DBNAME</name>
+          <description>Database name</description>
+          <defaultValue>DBNAME</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>DBUSER</name>
+          <description>Privileged DBA account to take database backup</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>root</string>
+              <string>dbaadmin</string>
+              <string>admin</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>vyadav@remote-host:22</siteName>
+      <command>/root/db_backup_to_awss3_bucket.sh $DBUSER $DBAPASS $AWSS3PASS $DBNAME</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper plugin="credentials-binding@1.23">
+      <bindings>
+        <org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+          <credentialsId>AWSS3KEY</credentialsId>
+          <variable>AWSS3PASS</variable>
+        </org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+        <org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+          <credentialsId>SQLPASSWORD</credentialsId>
+          <variable>DBAPASS</variable>
+        </org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+      </bindings>
+    </org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+  </buildWrappers>
+</project>

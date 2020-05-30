@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: rhass
+Build-Jdk: 1.8.0_171
+Extension-Name: chef-cookbook-pipeline
+Specification-Title: Set up a pipeline for testing Chef cookbooks.
+Implementation-Title: chef-cookbook-pipeline
+Implementation-Version: 0.1.0
+Group-Id: io.chef.jenkins-ci.plugins
+Short-Name: chef-cookbook-pipeline
+Long-Name: Chef Cookbook Pipeline Plugin
+Plugin-Version: 0.1.0
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: blueocean:1.2.4,workflow-step-api:2.12
+Plugin-Developers: 
+
