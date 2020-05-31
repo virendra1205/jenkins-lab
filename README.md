@@ -1,15 +1,13 @@
 
 # Jenkins Lab Setup & Guide
 
-### This repository is created for those professinals who want to learn and setup for jenkins lab on Docker. In this lab you will be learning and setting up Jenkins integration with various DevOps and infrstructure tools like,
-
+### This repository is created for those who want to learn and setup for jenkins ready lab on Docker. In this lab you will be learning and setting up Jenkins integration with various DevOps and infrstructure tools like,
   - MySQL
   - Maven
   - AWS S3 bucket
   - Docker Containers 
   - SSH Tool
   - Anisble
- 
   
 ### How to use this repository 
 - **Ensure you have git client installed in your system** 
