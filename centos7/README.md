@@ -1,7 +1,8 @@
-# The Centos7 folder contains Dockerfile to build remote-host for lab, which will have following tools installed in it.
+# Centos7 
+### The folder contains Dockerfile to build remote-host for lab, which will have following tools installed in it.
  -	SSH
  -	ZIP
  -	AWSCLI 
  -	MYSQL Client
 
-## It will also configured remote user for connecting it and start SSH service. Folder also container remote RSA key for Jenkins to allow connection to remote-host. #
+**Key file *`jenkins-remote-key.pub`*  will be deployed to remote-host container for password less authentication from jenkins container.**
