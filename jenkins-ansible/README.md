@@ -1,3 +1,3 @@
-#Jenkins-Ansible
+# Jenkins-Ansible
 
-**In this folder we have Dockerfile which will build the jenkins container with Ansible in it. 
+**In this folder we have Dockerfile, which will help in building jenkins container with Ansible.**
