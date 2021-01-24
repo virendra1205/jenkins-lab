@@ -29,9 +29,13 @@
    
  - **Install Docker and Docker compose in server.
    ```
+      sudo curl -o https://get.docker.com docker-setup.sh
       sudo chmod +x docker-setup.sh
       sudo ./docker-setup.sh
-      sudo docker version                       << Validate Docker Version 
+      sudo docker version                       << Validate Docker Version
+      sudo curl -L "https://github.com/docker/compose/releases/download/1.28.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+      sudo chmod +x /usr/local/bin/docker-compose
+      sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
       sudo docker-compose --version             << Validate Docker compose Version
     ```
     
